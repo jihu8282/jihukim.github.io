@@ -1,0 +1,198 @@
+
+body {
+  background-color: #FFFCF9;
+  padding: 50px;
+  font-family: 'Karla', sans-serif;
+  color:  #606060;
+  font-size: 22px;
+}
+
+.sec{
+  background-image: bpSquare;
+}
+.bpCircle1{
+  flex: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-bottom: 50px;
+}
+
+
+.bpCircle2{
+  flex: 1;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-bottom: 10px;
+}
+
+img {
+  max-width: 100%;
+
+}
+
+.sec{
+  background-image: url(assets/blackpink_square.jpg);
+}
+.bpSquare{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  padding-bottom: 50px;
+  padding-bottom: 100px;
+}
+
+.ㄱㄴㄷ{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.title{
+  text-align: center;
+  font-family:  'Roboto', sans-serif;
+  font-size: 40pt;
+}
+
+
+
+
+.korean_def{
+  text-align: center;
+  font-family:'Karla', sans-serif;
+  font-style: italic;
+}
+
+
+.oneCont{
+  padding-top: 50px;
+  font-family:'Karla', sans-serif;
+  font-size: 20pt;
+  padding-bottom: 20px;
+}
+
+.oneItal{
+  font-family:'Karla', sans-serif;
+  font-style: italic;
+}
+
+.bpCircle{
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  padding-bottom: 50px;
+}
+
+.name1{
+  padding-top: 50px;
+  padding-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 68%;
+}
+
+
+.kT{
+  padding: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.twoCont{
+  padding-top: 50px;
+  flex: 1;
+  text-align: left;
+  font-family:'Karla', sans-serif;
+  font-size: 20pt;
+
+}
+
+
+.name2{
+  flex: 1;
+  padding-top: 50px;
+  padding-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 68%;
+}
+
+.threeCont{
+    padding-top: 50px;
+  font-family:'Karla', sans-serif;
+  font-size: 20pt;
+  padding-bottom: 20px;
+}
+
+.threeItal{
+  font-family:'Karla', sans-serif;
+  font-style: italic;
+}
+
+
+.vowel{
+  padding-top: 20px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+.name3{
+  padding-top: 50px;
+  padding-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 68%;
+}
+
+.fourCont{
+    padding-top: 50px;
+  font-family:'Karla', sans-serif;
+   font-size: 20pt;
+}
+
+
+
+.name4{
+  padding-top: 50px;
+  padding-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 68%;
+}
+
+.thankyou{
+  padding-top: 100px;
+ text-align: center;
+  font-family:  'Karla', sans-serif;
+  font-size: 40pt;
+  font-style: italic;
+}
+
+
+.name5{
+  padding-top: 50px;
+  padding-bottom: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 68%;
+}
+
+
+
+
+
