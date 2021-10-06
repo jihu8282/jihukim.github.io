@@ -16,3 +16,71 @@ a:hover {
     color: red;
     background: #eff;
 }
+
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #21CFFF;
+}
+
+.all-info {
+  margin: 0;
+  padding: 5px;
+
+}
+
+.all-info > h2{
+
+  margin: 10px;
+  padding: 5px;
+}
+
+
+
+.info > p {
+  margin: 4px;
+  font-size: 90%;
+}
+
+
+h1{
+    color: white;
+    font-size: 100pt;
+    align-content: center;
+}
+
+h2{
+    color: navy;
+}
+
+h3{
+    color: royalblue;
+}
+
+p{
+    font-style: italic;
+}
+
+.container{
+    display: inline-flex;
+    flex-direction: row;
+    padding: 5px;
+    margin: 4px;
+}
+
+.Hockney{
+    display: inline-flex;
+    align-items: center;
+}
+
+.Hockney :hover{
+    background-color: red;
+}
+
+.container1{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
