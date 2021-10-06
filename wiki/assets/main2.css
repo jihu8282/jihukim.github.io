@@ -3,7 +3,7 @@
     border: 2px #DAF7A6;
     background: #black;
     border-radius: 5px;
-    align-items: center;
+    align-items: stretch;
 }
 a {
     display: block;
@@ -67,8 +67,8 @@ p{
 .container{
     display: inline-flex;
     flex-direction: row;
-    padding: 5px;
-    margin: 4px;
+    padding: 10px;
+    margin: 10px;
 }
 
 .Hockney{
@@ -84,5 +84,12 @@ p{
     display: flex;
     flex-direction: row;
     align-items: center;
+    padding: 10px;
+    margin: 10px;
 
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
 }
