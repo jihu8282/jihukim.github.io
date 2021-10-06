@@ -1,8 +1,9 @@
 #button {
-    width: 6em;
+    width: 20em;
     border: 2px #DAF7A6;
     background: #ffe;
     border-radius: 5px;
+       align-items: center;
 }
 a {
     display: block;

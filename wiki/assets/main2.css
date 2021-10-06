@@ -1,8 +1,9 @@
 #button {
-    width: 6em;
+    width: 20em;
     border: 2px #DAF7A6;
-    background: #ffe;
+    background: #black;
     border-radius: 5px;
+    align-items: center;
 }
 a {
     display: block;
@@ -60,6 +61,7 @@ h3{
 
 p{
     font-style: italic;
+    font-size: 12pt;
 }
 
 .container{
