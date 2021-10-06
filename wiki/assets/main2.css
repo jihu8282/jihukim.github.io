@@ -28,6 +28,8 @@ body{
 .all-info {
   margin: 0;
   padding: 5px;
+  font-family: 'Raleway', sans-serif;
+    background-color: #21CFFF;
 
 }
 
@@ -35,6 +37,8 @@ body{
 
   margin: 10px;
   padding: 5px;
+  font-family: 'Raleway', sans-serif;
+    background-color: #21CFFF;
 }
 
 
@@ -42,6 +46,8 @@ body{
 .info > p {
   margin: 4px;
   font-size: 90%;
+  font-family: 'Raleway', sans-serif;
+    background-color: #21CFFF;
 }
 
 
@@ -49,19 +55,27 @@ h1{
     color: white;
     font-size: 100pt;
     align-content: center;
+    font-family: 'Raleway', sans-serif;
+    background-color: #21CFFF;
 }
 
 h2{
     color: navy;
+    font-family: 'Raleway', sans-serif;
+    background-color: #21CFFF;
 }
 
 h3{
     color: royalblue;
+    font-family: 'Raleway', sans-serif;
+    background-color: #21CFFF;
 }
 
 p{
     font-style: italic;
     font-size: 12pt;
+    font-family: 'Raleway', sans-serif;
+    background-color: #21CFFF;
 }
 
 .container{
