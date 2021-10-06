@@ -57,7 +57,14 @@ h3{
     color: royalblue;
 }
 
-.item{
+.container{
     display: inline-flex;
     flex-direction: row;
+    padding: 5px;
+    margin: 4px;
+}
+
+.Hockney{
+    padding:  5px;
+    margin: 4px;
 }
