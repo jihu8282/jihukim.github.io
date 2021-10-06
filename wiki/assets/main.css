@@ -56,3 +56,8 @@ h2{
 h3{
     color: royalblue;
 }
+
+.item{
+    display: inline-flex;
+    flex-direction: row;
+}
