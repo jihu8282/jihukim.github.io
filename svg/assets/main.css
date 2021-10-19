@@ -1,0 +1,62 @@
+#smile{
+  height: 500px;
+}
+
+body {
+  background-color: pink;
+  font-family: arial;
+  color: red;
+  font-size: 100px;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.item {
+  text-align: center;
+}
+
+@keyframes spinType {
+  0% {
+    transform: rotate(0.5turn);
+  }
+  60% {
+    transform: rotate(0.7turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  }
+}
+
+@keyframes smileSpin {
+  0% {
+    transform: rotate(0turn);
+  }
+  100% {
+    transform: rotate(1turn);
+  } 
+}
+
+
+
+.mouth {
+  animation: smileSpin 5s ease-out infinite;
+  height:500px;
+}
+
+
+#smile :hover {
+  animation-play-state: paused;
+  cursor: pointer;
+}
+
+/*basic animation, spins once in one second*/
+div.item {
+  animation: spinType 1s;
+}
+
