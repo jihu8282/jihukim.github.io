@@ -21,34 +21,76 @@ body {
   text-align: center;
 }
 
-@keyframes spinType {
+@keyframes smileSpinType {
   0% {
-    transform: rotate(0.5turn);
+    transform: rotate(45deg);
+
   }
   60% {
-    transform: rotate(0.7turn);
+    transform: rotate(180deg);
   }
   100% {
-    transform: rotate(1turn);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes smileSpin {
   0% {
-    transform-origin: center;
+    transform-origin: 50px 50px;
   }
   100% {
-    transform-origin:  center;
+    transform-origin: -50px 0px;
   } 
 }
 
+@keyframes pupilMove {
+  0% {
+    transform:  translate(0px);
+  }
+  20% {
+    transform: translate(-10px);
+  } 
+  40% {
+    transform: translate(-20px);
+  } 
+  60% {
+    transform: translate(-10px);
+  }
+  80% {
+    transform: translate(-10px);
+  } 
+  100% {
+    transform: translate(0px);
+  } 
+}
+
+@keyframes backgroundChange{
+  0%{
+    background-color: white;
+  }
+  50%{
+    background-color: #DEF5FF; 
+  }
+  100%{
+    background-color: #CBEFFE;
+  }
+}
 
 
 .mouth {
   animation: smileSpin 5s ease-out infinite;
   height:500px;
+  
 }
 
+.pupil {
+  animation: pupilMove 2s ease-out infinite;
+  height:500px;
+}
+
+#smile{
+  animation: backgroundChange 5s ease-out infinite;
+}
 
 #smile :hover {
   animation-play-state: paused;
@@ -57,6 +99,6 @@ body {
 
 /*basic animation, spins once in one second*/
 div.item {
-  animation: spinType 1s;
+  animation: smileSpinType 1s;
 }
 
