@@ -1,5 +1,7 @@
 #smile{
   height: 500px;
+  justify-content: center;
+  align-items: center;
 }
 
 body {
@@ -30,16 +32,18 @@ body {
     transform: rotate(180deg);
   }
   100% {
-    transform: rotate(360deg);
+    transform: rotate(350deg);
   }
 }
 
 @keyframes smileSpin {
   0% {
-    transform-origin: 50px 50px;
+    transform-origin:  center;
+    transform: rotate(0deg);
   }
   100% {
-    transform-origin: -50px 0px;
+    transform-origin:  center;
+    transform: rotate(350deg);
   } 
 }
 
@@ -77,23 +81,50 @@ body {
 }
 
 
-.mouth {
-  animation: smileSpin 5s ease-out infinite;
-  height:500px;
-  
+@keyframes noseChange{
+  0%{
+    background-color: white;
+  }
+  50%{
+    background-color: red; 
+  }
+  100%{
+    background-color: #CBEFFE;
+  }
 }
+
+
 
 .pupil {
   animation: pupilMove 2s ease-out infinite;
   height:500px;
 }
 
+
+
+.mouth {
+  animation: smileSpin 5s ease-out infinite;
+  height: 500px;
+}
+
+
 #smile{
   animation: backgroundChange 5s ease-out infinite;
 }
 
+.nose{
+  animation: noseChange 5s ease-out infinite;
+}
+
+/*
+.mouth : hover{
+  animation: smileSpin 5s ease-out infinite;
+  height: 500px;
+}
+*/
+
 #smile :hover {
-  animation-play-state: paused;
+  /*animation-play-state: paused;*/
   cursor: pointer;
 }
 
