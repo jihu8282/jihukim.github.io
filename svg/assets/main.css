@@ -32,18 +32,18 @@ body {
     transform: rotate(180deg);
   }
   100% {
-    transform: rotate(350deg);
+    transform: rotate(360deg);
   }
 }
 
 @keyframes smileSpin {
   0% {
-    transform-origin:  center;
+    transform-origin:  left;
     transform: rotate(0deg);
   }
   100% {
-    transform-origin:  center;
-    transform: rotate(350deg);
+    transform-origin:  top;
+    transform: rotate(360deg);
   } 
 }
 
@@ -124,7 +124,7 @@ body {
 */
 
 #smile :hover {
-  /*animation-play-state: paused;*/
+  animation-play-state: paused;
   cursor: pointer;
 }
 
