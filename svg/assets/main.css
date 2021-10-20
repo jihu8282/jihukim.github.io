@@ -35,10 +35,10 @@ body {
 
 @keyframes smileSpin {
   0% {
-    transform: rotate(0turn);
+    transform-origin: center;
   }
   100% {
-    transform: rotate(1turn);
+    transform-origin:  center;
   } 
 }
 
