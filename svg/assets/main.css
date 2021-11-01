@@ -102,7 +102,7 @@ body {
 
 
 
-.mouth {
+.mouth img{
   animation: smileSpin 5s ease-out infinite;
   height: 500px;
 }
