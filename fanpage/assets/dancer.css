@@ -5,6 +5,7 @@ body{
 }
 
 .banner .home{
+	margin-top: 40px;
 	font-family: 'Permanent Marker', cursive;
 	color: navy;
 	margin-left: 30px;
@@ -30,6 +31,21 @@ body{
 .banner .button5{
 	width: 144px;
 	position: flex;
+}
+
+.banner{
+	display: flex;
+	justify-content: space-around;
+}
+
+.buttons{
+	display:flex;
+	justify-content: flex-end;
+}
+
+.toprow{
+	display: flex;
+	justify-content: space-around;
 }
 
 
@@ -75,6 +91,7 @@ body{
 }
 
 .danceVid{
+	margin-top: 100px;
 	border: 2px solid black;
 	box-shadow: -10px 10px black;
 	width: 770px;
