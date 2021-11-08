@@ -190,5 +190,7 @@ body{
 
 .floatingDancer:hover{
 	cursor: url("retrocursor.png"), auto;
+	transform: rotate(-15deg);
+
 }
 
