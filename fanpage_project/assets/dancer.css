@@ -80,12 +80,13 @@ body{
 	border: 2px solid black;
 	box-shadow: -10px 10px black;
 	width: 419px;
-	height: 666px;
+	height: 500px;
 	background-color:#FFC700 ;
 	margin-left: 84px;
 	position: flex;
 	margin-top: 100px;
 	letter-spacing: 5px;
+
 
 
 }
@@ -131,6 +132,7 @@ body{
 	color: white;
 
 	font-family:  'Permanent Marker', cursive;
+
 }
 
 .danceVid{
@@ -138,9 +140,8 @@ body{
 	border: 2px solid black;
 	box-shadow: -10px 10px black;
 	width: 770px;
-	height: 659px;
+	height: 500px;
 	margin-right: 84px;
-	position: flex;
 }
 
 .dancerPic1{
@@ -160,7 +161,7 @@ body{
 	margin-right: 84px;
 	position: flex;
 	margin-top: 100px;
-	margin-left: 97px;
+	margin-left: 84px;
 }
 .dancerPic3{
 	border: 2px solid black;
