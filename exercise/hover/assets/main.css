@@ -1,0 +1,75 @@
+body {
+  font-family: 'karla', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #CDF7FC;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale; */
+  }
+
+.quotes {
+  width: 80%;
+  height: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* z-index: 2; */
+}
+
+.quotes .box {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  min-height: 320px;
+  background: #5ADBE9;
+  overflow: hidden;
+  transition: all 0.5s ease-in;
+  z-index: 2;
+  box-sizing: border-box;
+  padding: 30px;
+  border-radius: 50px;
+  justify-content: center;
+}
+
+.quotes .box h2 {
+  position: absolute;
+  margin: 0;
+  padding: 20;
+  margin-bottom: 50;
+  bottom: -10;
+  right: -10;
+  font-size: 18px;
+}
+
+.quotes .box ul {
+  position: flex;
+  padding: 40;
+  margin-bottom: 50;
+  bottom: -10;
+  right: -10;
+  font-size: 28px;
+}
+
+.quotes .box.box1:hover {
+  color: navy;
+  box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.2);
+}
+
+.quotes .box.box2:hover {
+  color:orange;
+  box-shadow: 20px 50px 100px rgba(0, 0, 0, 0.2);
+}
+
+.quotes .box.box1:hover { 
+  background: linear-gradient(#FD5C23, #EEEB09);
+
+}
+
+.quotes .box.box2:hover {
+  background: linear-gradient(#262135, #1E2E63);
+}
