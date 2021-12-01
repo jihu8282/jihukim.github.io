@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Model Viewer Demo</title>
+  <link rel="stylesheet" type="text/css" href="assets/main.css">
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+
+<body>
+
+  <model-viewer src="https://cif21.labud.nyc/assets/astronaut.glb">
+  </model-viewer>
+
+
+  <model-viewer src="https://cif21.labud.nyc/assets/astronaut.glb" camera-controls>
+  </model-viewer>
+
+
+  <model-viewer src="https://cif21.labud.nyc/assets/astronaut.glb" camera-controls auto-rotate>
+  </model-viewer>
+
+
+  <model-viewer src="https://cif21.labud.nyc/assets/astronaut.glb" camera-controls auto-rotate
+    rotation-per-second="30deg">
+  </model-viewer>
+
+
+  <model-viewer src="https://cif21.labud.nyc/assets/astronaut.glb" camera-controls interaction-prompt-threshold=500>
+  </model-viewer>
+
+
+  <model-viewer src="https://cif21.labud.nyc/assets/astronaut.glb" camera-controls interaction-prompt-threshold=500
+    interaction-prompt-style="basic">
+  </model-viewer>
+
+
+  <model-viewer src="https://cif21.labud.nyc/assets/astronaut.glb" camera-controls interaction-prompt-threshold=500
+    disable-zoom>
+  </model-viewer>
+
+
+
+  <model-viewer src="https://cif21.labud.nyc/assets/astronaut.glb" camera-controls interaction-prompt-threshold=500 disable-zoom>
+    <div class="interaction-prompt" slot="interaction-prompt">👽</div>
+
+    <button class="Hotspot" slot="hotspot-1" data-position="0.00943085506420653m 1.722718203227771m 0.3443116799137753m" data-normal="0.2586151003950921m -0.19952579310771987m 0.9451495583939994m" data-visibility-attribute="visible">
+      <div class="HotspotAnnotation">Hello</div>
+   </button>
+   <button class="Hotspot" slot="hotspot-4" data-position="-0.20681301416096895m 1.2329930947787622m 0.14629573837534604m" data-normal="-0.9014587584383115m 0.18298956882618506m 0.3922842394688641m" data-visibility-attribute="visible">
+      <div class="HotspotAnnotation">Good Bye</div>
+   </button>
+  </model-viewer>
+</body>
+
+</html>
