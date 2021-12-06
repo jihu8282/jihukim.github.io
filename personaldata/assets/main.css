@@ -1,0 +1,168 @@
+body{
+  
+	background-color: black;
+  cursor: url("cursor.png"), auto;
+
+
+}
+
+.pol1{
+  cursor: url("retrocursor.png"), auto;
+  position: absolute;
+  top: 100px;
+  left: 50px; 
+  border: 2px solid black;
+	box-shadow: -10px 10px black;
+	width: 500px;
+	height: 650px;
+	background-color: white;
+	margin-left: 84px;
+	position: flex;
+	margin-top: 100px;
+  transform: rotate(20deg);
+
+  display: flex;
+  flex-wrap: wrap;
+  
+
+
+}
+
+.dancerName{
+  margin-left: 150px;
+  font-size: 50px;
+	color: #FB4311;
+  font-family: 'Permanent Marker', cursive;
+
+
+}
+
+.dancerPic1{
+  margin-left: 40px;
+  margin-right:40px;
+  margin-top: 40px;
+  align-content: center;
+  width:450px;
+  height:450px;
+
+ 
+}
+
+.dancerPic2{
+  margin-left: 25px;
+  margin-right:20px;
+  margin-top: 40px;
+  align-content: center;
+  width:450px;
+  height:450px;
+
+ 
+}
+
+.pol1:hover{
+  cursor: url("retrocursor.png"), auto;
+  background-color:#FFC700;
+}
+
+.pol2:hover{
+  cursor: url("retrocursor.png"), auto;
+  background-color:#FFC700;
+}
+.pol3:hover{
+  cursor: url("retrocursor.png"), auto;
+  background-color:#FFC700;
+}
+.pol4:hover{
+  cursor: url("retrocursor.png"), auto;
+  background-color:#FFC700;
+}
+.pol5:hover{
+  cursor: url("retrocursor.png"), auto;
+  background-color:#FFC700;
+}
+
+
+
+.pol2{
+  width: 500px;
+  position: absolute;
+  top: 550px;
+  right: 60px; 
+
+  box-shadow: -10px 10px black;
+  width: 500px;
+	height: 650px;
+	background-color: white;
+	margin-right: 84px;
+	position: flex;
+	margin-top: 100px;
+  transform: rotate(-10deg);
+
+  display: flex;
+  flex-wrap: wrap;
+  
+
+}
+	
+
+.pol3{
+  width: 500px;
+  position: absolute;
+  top: 1000px;
+  left: 50px; 
+
+  box-shadow: -10px 10px black;
+  width: 500px;
+	height: 650px;
+	background-color: white;
+	margin-left: 84px;
+	position: flex;
+	margin-top: 100px;
+  transform: rotate(15deg);
+
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.pol4{
+  width: 500px;
+  position: absolute;
+  top: 1500px;
+  right: 60px; 
+
+  box-shadow: -10px 10px black;
+  width: 500px;
+	height: 650px;
+	background-color: white;
+	margin-right: 84px;
+	position: flex;
+	margin-top: 100px;
+  transform: rotate(-20deg);
+
+  display: flex;
+  flex-wrap: wrap;
+  
+
+}
+
+.pol5{
+  width: 20px;
+  position: absolute;
+  top: 2000px;
+  left: 50px; 
+
+  box-shadow: -10px 10px black;
+  width: 500px;
+	height: 650px;
+	background-color: white;
+	margin-left: 84px;
+	position: flex;
+	margin-top: 100px;
+  transform: rotate(10deg);
+
+  display: flex;
+  flex-wrap: wrap;
+  
+
+}
