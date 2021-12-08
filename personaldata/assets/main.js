@@ -2,7 +2,7 @@ const wordEl = document.getElementById("word");
 const descriptEl = document.getElementById("description");
 const whiteRecEl = document.getElementById("whiteRec");
 const whiteRec2El = document.getElementById("whiteRec2");
-const attEl = document.getElementById("att1");
+// const attEl = document.getElementById("att1");
 
 const search = window.location.search;
 

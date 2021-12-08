@@ -110,14 +110,14 @@ p{
   position: relative;
   text-align: center;
 }
-.blob{
+/* .blob{
   height: 236px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 1;
-}
+} */
 
 
 
@@ -143,14 +143,13 @@ p{
   font-size: 36px;
   font-weight: bold;
   color:#C2F642;
-  z-index: 2;
+
 }
 
 .descripp{
   font-size: 20px;
   font-weight: bold;
   color:white;
-  z-index: 2;
 }
 
 .question{
