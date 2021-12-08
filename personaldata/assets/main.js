@@ -17,7 +17,7 @@ if(attribute === "dog_lover"){
   whiteRec2El.classList.add("pos9");
 
 }else if(attribute === "full_of_personality"){
-   wordEl.innerText = 'full of personality';
+  wordEl.innerText = 'full of personality';
   descriptEl.innerText = ": I personally enjoy following her outfits on insta";
   whiteRecEl.classList.add("pos1");
   whiteRec2El.classList.add("pos2");
