@@ -116,7 +116,7 @@ p{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-image: url("assets/blob.svg");
+  z-index: 1;
 }
 
 
@@ -143,12 +143,14 @@ p{
   font-size: 36px;
   font-weight: bold;
   color:#C2F642;
+  z-index: 2;
 }
 
 .descripp{
   font-size: 20px;
   font-weight: bold;
   color:white;
+  z-index: 2;
 }
 
 .question{
