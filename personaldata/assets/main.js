@@ -25,7 +25,7 @@ if(attribute === "dog_lover"){
   wordEl.innerText = 'talented dancer';
   descriptEl.innerText = ": I love dancing with her!";
   whiteRecEl.classList.add("pos2");
-  whiteRec2El.classList.add("pos3");
+  whiteRec2El.classList.add("pos5");
 }else if(attribute === "lovable"){
   wordEl.innerText = 'lovable';
   descriptEl.innerText = ": She's best at smiling with her eyes";
@@ -37,16 +37,16 @@ if(attribute === "dog_lover"){
   whiteRecEl.classList.add("pos7");
   whiteRec2El.classList.add("pos4");
   
-}else if(attribute === "cute"){
-  wordEl.innerText = 'cute';
-  descriptEl.innerText = ": adorable!";
-  whiteRecEl.classList.add("pos5");
-  whiteRec2El.classList.add("pos1");
+}else if(attribute === "calm"){
+  wordEl.innerText = 'calm';
+  descriptEl.innerText = ": She is really good at holding her emotions and calmly figure out a way";
+  whiteRecEl.classList.add("pos9");
+  whiteRec2El.classList.add("pos9");
 }else if(attribute === "too_funny"){
   wordEl.innerText = 'too funny';
   descriptEl.innerText = ": One of the funniest nights when we all hung out together for my birthday";
-  whiteRecEl.classList.add("pos6");
-  whiteRec2El.classList.add("pos8");
+  whiteRecEl.classList.add("pos8");
+  whiteRec2El.classList.add("pos9");
 }else if(attribute === "thoughtful"){
   wordEl.innerText = 'thoughtful';
   descriptEl.innerText = ": She's the reason I got through college";
@@ -56,10 +56,10 @@ if(attribute === "dog_lover"){
   wordEl.innerText = 'warm-hearted';
   descriptEl.innerText = ": She was my go-to person whenever I needed someone to talk to";
   whiteRecEl.classList.add("pos8");
-  whiteRec2El.classList.add("pos6");
+  whiteRec2El.classList.add("pos4");
 }else if(attribute === "small_but_strong"){
   wordEl.innerText = 'small but strong';
   descriptEl.innerText = ": She is stronger than she looks";
-  whiteRecEl.classList.add("pos8");
-  whiteRec2El.classList.add("pos5");
+  whiteRecEl.classList.add("pos7");
+  whiteRec2El.classList.add("pos6");
 }
