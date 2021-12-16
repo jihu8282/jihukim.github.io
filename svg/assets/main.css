@@ -26,6 +26,7 @@ body {
 @keyframes smileSpinType {
   0% {
     transform: rotate(45deg);
+    transform-origin:  right;
 
   }
   60% {
@@ -33,6 +34,7 @@ body {
   }
   100% {
     transform: rotate(360deg);
+    transform-origin:  left;
   }
 }
 
@@ -53,6 +55,7 @@ body {
   }
   20% {
     transform: translate(-10px);
+    transform-origin:  left;
   } 
   40% {
     transform: translate(-20px);
@@ -62,6 +65,7 @@ body {
   }
   80% {
     transform: translate(-10px);
+    transform-origin:  left;
   } 
   100% {
     transform: translate(0px);
@@ -70,13 +74,16 @@ body {
 
 @keyframes backgroundChange{
   0%{
-    background-color: white;
+    background-image: linear-gradient(to bottom right, lightyellow, yellow, orange);
   }
   50%{
-    background-color: #DEF5FF; 
+    background-color: lightyellow; 
+  }
+  80%{
+    background-color: yellow;
   }
   100%{
-    background-color: #CBEFFE;
+    background-color: orange;
   }
 }
 
