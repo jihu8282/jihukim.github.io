@@ -1,7 +1,7 @@
 
 body {
-  background-color: #086256;
-  color:  #D4B7D2;
+  background-color: black;
+  color: skyblue;
   margin: 0;
   font-family: "DM Sans", sans-serif;
   padding: 20px;
@@ -13,12 +13,13 @@ h1 {
 }
 
 svg {
-  /*background-color:  white;*/
-}
+  background-color: black;
 
-/* .tick {
+}
+.tick {
   font-size:  20px;
   letter-spacing: 1px;
+  /* color: orange; */
 }
 
 .domain {
@@ -30,10 +31,5 @@ line {
 }
 .rectangle {
   transition: fill 500ms ease;
+  color: orange;
 }
-
-.rectangle:hover {
-  fill: #ff6af5;
-  cursor: pointer;
-
-} */

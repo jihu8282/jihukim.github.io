@@ -17,12 +17,10 @@ body {
   z-index: 1;
   margin-top: 2em;
   border: 1px solid black;
-  border-radius: 20px;
     -webkit-appearance: none;  /* Override default CSS styles */
     appearance: none;
     width: 500px; /* Specified height */
-    height: 20px; /* Specified height */
-   
+    height: 50px; /* Specified height */
     background: white; /* background color */
     outline: none; /* Remove outline */
     opacity: 0.4; /* Set transparency (for mouse-over effects on hover) */
@@ -30,19 +28,22 @@ body {
     transition: all .2s;
   }
 
+
+
 /* Mouse-over effects */
 .slider:hover {
   opacity: 1; /* Fully shown on mouse-over */
+  border: 1px dotted black;
 }
 
 /* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
 .slider::-webkit-slider-thumb {
   -webkit-appearance: none; /* Override default look */
   appearance: none;
-  width: 40px; /* Set a specific slider handle width */
-  height: 40px; /* Slider handle height */
+  width: 50px; /* Set a specific slider handle width */
+  height: 50px; /* Slider handle height */
   border-radius: 50%; /* Make it a circle */
-  background: black; /*  background */
+  background: OliveDrab; /*  background */
   cursor: pointer; /* Cursor on hover */
 }
 
@@ -53,16 +54,16 @@ body {
   cursor: pointer; /* Cursor on hover */
 }
 
+
 .copy {
   font-family: arial;
   font-size: 100px;
   width:400px;
 }
 
-
-
 .button {
   z-index: 1;
+  margin-top: 2em;
   padding:20px;
   background-color: yellow;
 }
@@ -71,6 +72,7 @@ body {
   background-color: green;
   cursor: pointer;
 }
+
 
 .input {
   z-index: 1;

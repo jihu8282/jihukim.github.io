@@ -1,57 +1,67 @@
 
-const data = [    
-    {name: 'Rachel', dist: 10},
-    {name: 'Dana', dist: 10},
-    {name: 'Vanessa', dist: 10},
-    {name: 'Sarah', dist: 10},
-    {name: 'Ashley', dist: 10}
+// set up data
+const data = [
+  {name: "Friday", amount: 7.5},
+  {name: "Saturday", amount:5},
+  {name: "Sunday", amount: 8},
 ];
-//var fullwidth = 1000, fullheight = 500;
-// set the dimensions and margins of the graph
-var margin = {top: 10, right: 30, bottom: 30, left: 60},
-    width = 460 - margin.left - margin.right,
-    height = 400 - margin.top - margin.bottom;
 
-// append the svg object to the body of the page
-var svg = d3.select("#my_dataviz")
-  .append("svg")
-    .attr("width", width + margin.left + margin.right)
-    .attr("height", height + margin.top + margin.bottom)
+// // set up styling that will hold the chart
+const width = 800;
+const height = 800;
+const margin = {top: 0, bottom: 0, left: 100, right: 100};
+
+// create svg that will hold chart, you can then target the svg with css to see it
+const svg = d3.select(".d3-container")
+.append("svg")
+.attr("height", height - margin.top - margin.bottom)
+.attr("width", width - margin.left - margin.right)
+.attr("viewBox", [0,0, width, height]);
+
+// set up the x scale to match how many elements we have in our object
+const x = d3.scaleBand()
+.domain(d3.range(data.length))
+.range([margin.left, width - margin.right])
+.padding(0.1);
+
+// set up y scale to match the amounts. 0 to 15 will work
+const y = d3.scaleLinear()
+.domain([0,10])
+.range([height - margin.bottom, margin.top]);
+
+// start creating the bars for the chart.
+// we set up rectangles, as well as sort the data from biggest to smallest
+svg
   .append("g")
-    .attr("transform",
-          "translate(" + margin.left + "," + margin.top + ")");
+  .attr("fill", "#D4B7D2")
+  .selectAll("rect")
+  .data(data.sort((a,b) => d3.descending(a.amount, b.amount)))
+  .join("rect")
+  // places data on correct positions
+  .attr("x", (d, i) => x(i))
+  .attr("y", (d) => y(d.amount))
+  .attr("height", d => y(0) - y(d.amount))
+  .attr("width", x.bandwidth())
 
-//Read the data
-//d3.csv("https://raw.githubusercontent.com/holtzy/D3-graph-gallery/master/DATA/iris.csv", function(data) {
+// set up labels for x axis
+// the transform moves the labels to the bottom, comment out to see what i mean
+function xAxis(g) {
+  g.attr("transform", `translate(0, ${height - margin.bottom})`)
+  g.call(d3.axisBottom(x).tickFormat(i => data[i].name))
+}
 
-  // Add X axis
-  var x = d3.scaleLinear()
-    .domain([4, 8])
-    .range([ 0, width ]);
-  svg.append("g")
-    .attr("transform", "translate(0," + height + ")")
-    .call(d3.axisBottom(x));
+// set up labels for y axis
+function yAxis(g){
+  g.attr("transform", `translate(${margin.left}, 0)`)
+  .call(d3.axisLeft(y).ticks(null, data.format))
+}
 
-  // Add Y axis
-  var y = d3.scaleLinear()
-    .domain([0, 9])
-    .range([ height, 0]);
-  svg.append("g")
-    .call(d3.axisLeft(y));
 
-  // Color scale: give me a specie name, I return a color
-  var color = d3.scaleOrdinal()
-    .domain(["setosa", "versicolor", "virginica" ])
-    .range([ "#440154ff", "#21908dff", "#fde725ff"])
+// draw the labels onto the page for y
+svg.append("g").call(yAxis);
 
-  // Add dots
-  svg.append('g')
-    .selectAll("dot")
-    .data(data)
-    .enter()
-    .append("circle")
-      .attr("cx", function (d) { return x(d.Sepal_Length); } )
-      .attr("cy", function (d) { return y(d.Petal_Length); } )
-      .attr("r", 5)
-      .style("fill", function (d) { return color(d.Species) } )
-})
+//draws the labels onto the page. this puts them at the top by default so the you need to transform their position.
+svg.append("g").call(xAxis);
+
+// draws bars onto page. try adding another flower to the data to see how it changes.
+  svg.node();
