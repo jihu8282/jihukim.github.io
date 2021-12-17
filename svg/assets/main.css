@@ -74,16 +74,15 @@ body {
 
 @keyframes backgroundChange{
   0%{
-    background-image: linear-gradient(to bottom right, lightyellow, yellow, orange);
+    background-image: linear-gradient(to bottom right, lightyellow, lightblue,deepskyblue);
   }
   50%{
     background-color: lightyellow; 
   }
-  80%{
-    background-color: yellow;
-  }
+
+  
   100%{
-    background-color: orange;
+    background-color: lightblue;
   }
 }
 

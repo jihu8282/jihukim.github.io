@@ -1,8 +1,8 @@
- #button {
+#button {
     width: 20em;
     text-decoration: none;
 } 
-a {
+a{
     padding-top: 10px;
     display: block;
     width: 100%;
@@ -10,15 +10,16 @@ a {
     text-align: center;
     text-decoration: none;
     border-radius: 5px;
+    padding: 10px
 }
 a:hover {
     color: black;
-    background: white;
+    background: white
 }
 
 nav:hover {
-    color: black;
-    background: white;
+    color: white;
+    background: black;
 }
 
 
@@ -26,11 +27,26 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: white;
     padding: 40px;
-    background-image: url(onfLogo.jpg);
-    background-size: 50%;
-}
+    background-color: black;
 
+    
+
+
+}
+body:hover{
+  
+    background-size: 50%;
+    
+}
 mark{
     background-color:black;
     color:white;
+}
+
+.introduction{
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+    gap: 20px;
+    flex-wrap: wrap;
 }
